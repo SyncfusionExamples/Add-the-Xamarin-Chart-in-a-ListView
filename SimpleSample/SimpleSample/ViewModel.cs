@@ -8,14 +8,14 @@ namespace SimpleSample
 {
     public class ViewModel
     {
-        public ObservableCollection<SeriesModel> SeriesItems { get; set; }
+        public ObservableCollection<SeriesViewModel> SeriesItems { get; set; }
 
         public ViewModel()
         {
-            SeriesItems = new ObservableCollection<SeriesModel>();
-            SeriesModel model = new SeriesModel();
+            SeriesItems = new ObservableCollection<SeriesViewModel>();
+            SeriesViewModel model = new SeriesViewModel();
 
-            SeriesItems.Add(new SeriesModel()
+            SeriesItems.Add(new SeriesViewModel()
             {
                 ChartTitle = "ColumnChart",
                 Series = new ChartSeriesCollection(){ new ColumnSeries(){
@@ -23,7 +23,7 @@ namespace SimpleSample
                     } },
             });
 
-            SeriesItems.Add(new SeriesModel()
+            SeriesItems.Add(new SeriesViewModel()
             {
                 ChartTitle = "LineChart",
                 Series = new ChartSeriesCollection(){ new LineSeries(){
@@ -31,7 +31,7 @@ namespace SimpleSample
                     } },
             });
 
-            SeriesItems.Add(new SeriesModel()
+            SeriesItems.Add(new SeriesViewModel()
             {
                 ChartTitle = "BarChart",
                 Series = new ChartSeriesCollection(){ new BarSeries(){
@@ -39,7 +39,7 @@ namespace SimpleSample
                     } },
             });
 
-            SeriesItems.Add(new SeriesModel()
+            SeriesItems.Add(new SeriesViewModel()
             {
                 ChartTitle = "PieChart",
                 Series = new ChartSeriesCollection(){ new PieSeries(){
@@ -49,9 +49,9 @@ namespace SimpleSample
         }
     }
 
-    public class SeriesModel
+    public class SeriesViewModel
     {
-        public SeriesModel()
+        public SeriesViewModel()
         {
             Data1 = new ObservableCollection<Model>();
             Data2 = new ObservableCollection<Model>();
