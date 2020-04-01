@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SimpleSample"
+             xmlns:chart="clr-namespace:Syncfusion.SfChart.XForms;assembly=Syncfusion.SfChart.XForms"
+             x:Class="SimpleSample.MainPage">
+    
+    <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ListView x:Name="listView" ItemsSource="{Binding SeriesItems}" RowHeight="200" >
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout >
+                        <chart:SfChart  VerticalOptions="FillAndExpand" Series="{Binding Series}" >
+                            <chart:SfChart.Title>
+                                <chart:ChartTitle Text="{Binding ChartTitle}"  FontAttributes="Bold"  TextColor="Aqua"/>
+                            </chart:SfChart.Title>
+                            <chart:SfChart.PrimaryAxis>
+                                <chart:CategoryAxis/>
+                            </chart:SfChart.PrimaryAxis>
+                            <chart:SfChart.SecondaryAxis>
+                                <chart:NumericalAxis  />
+                            </chart:SfChart.SecondaryAxis>
+                        </chart:SfChart>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+
+</ContentPage>
