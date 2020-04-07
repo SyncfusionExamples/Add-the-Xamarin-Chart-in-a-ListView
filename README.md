@@ -1,5 +1,9 @@
-# Load-Chat-ListView
-This example explains how to load Chat inside a ListView. SfChart provides support to add chart in ListView control. You can add the chart in ListView with the help of ItemTemplate, by using the DataTemplate for the customized ViewCell.
+# How to add the Xamarin.Forms Chart (SfChart) in a ListView
+This example explains how to load Chat inside a ListView.Please refer KB links for more details,
+
+[How to add the Xamarin.Forms Chart (SfChart) in a ListView?](https://www.syncfusion.com/kb/11341/?utm_medium=listing&utm_source=github-examples)
+
+SfChart provides support to add chart in ListView control. You can add the chart in ListView with the help of ItemTemplate, by using the DataTemplate for the customized ViewCell.
 
 The following code illustrates how to add the chart in ListView.
 
