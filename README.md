@@ -1,11 +1,8 @@
-# How to display a list of chart in Xamarin.Forms
-This example explains how to load Chat inside a ListView.Please refer KB links for more details,
+# How to add the Xamarin.Forms Charts in a ListView
 
-[How to display a list of chart in Xamarin.Forms](https://www.syncfusion.com/kb/11341/?utm_medium=listing&utm_source=github-examples)
+This example explains how to load Chart inside a ListView.
 
-SfChart provides support to add chart in ListView control. You can add the chart in ListView with the help of ItemTemplate, by using the DataTemplate for the customized ViewCell.
-
-The following code illustrates how to add the chart in ListView.
+[Xamarin.Forms Charts](https://help.syncfusion.com/xamarin/charts/overview) provides support to add chart in **ListView** control. You can add the chart in ListView with the help of **ItemTemplate**, by using the DataTemplate for the customized ViewCell as shown in the following code sample.
 
 **[XAML]**
 ```
@@ -136,7 +133,22 @@ public class Model
         public double YValue { get; set; }
 }
 ```
+## Output:
+
+![Display a list of chart in Xamarin.Forms](https://user-images.githubusercontent.com/53489303/200724410-f641e18e-9032-4c1a-bd0e-339fc32f7c86.png)
+
+KB article - [How to add the Xamarin.Forms Charts in a ListView](https://www.syncfusion.com/kb/11341/how-to-add-the-xamarin-forms-charts-in-a-listview)
+
+## See also
+
+[How to populate the Json data to Xamarin.Forms Charts](https://www.syncfusion.com/kb/10727/how-to-pass-a-json-array-to-xamarin-forms-chart)
+
+[How to bind the SQLite Database to the Xamarin.Forms Charts](https://www.syncfusion.com/kb/11267/how-to-bind-the-sqlite-database-to-the-xamarin-forms-chart)
+
+[How to bind series from MVVM pattern in Xamarin.Forms Charts](https://www.syncfusion.com/kb/10702/how-to-bind-series-from-mvvm-pattern-in-xamarin-forms-chart)
+
+[How to localize the labels in Xamarin.Forms Charts](https://www.syncfusion.com/kb/9415/how-to-localize-the-labels-in-xamarin-forms-chart)
+
 ## <a name="troubleshooting"></a>Troubleshooting ##
 ### Path too long exception
 If you are facing path too long exception when building this example project, close Visual Studio and rename the repository to short and build the project.
-
